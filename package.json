@@ -1,26 +1,26 @@
 {
-  "name": "react-native-action-sheet",
+  "name": "react-native-new-action-sheet",
   "description": "React native action sheet with native android",
-  "version": "2.2.0",
+  "version": "2.3.0",
   "main": "index.js",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/yfuks/react-native-action-sheet.git"
+    "url": "https://github.com/boganov/react-native-new-action-sheet.git"
   },
   "nativePackage": true,
-  "author": "Yoann Fuks (yfuks)",
+  "author": "Yoann Fuks (yfuks), Evgeny Boganov (boganov)",
   "contributors": [],
   "keywords": [
     "react-native",
-    "react-native-action-sheet",
+    "react-native-new-action-sheet",
     "react",
     "native",
     "action",
     "sheet"
   ],
   "bugs": {
-    "url": "https://github.com/yfuks/react-native-action-sheet/issues"
+    "url": "https://github.com/boganov/react-native-new-action-sheet/issues"
   },
   "scripts": {
     "prepublish": "rm -rf android/build Example/android/build Example/android/app/build"

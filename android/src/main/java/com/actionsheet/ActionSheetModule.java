@@ -5,6 +5,8 @@ import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.util.Log;
 import android.widget.ArrayAdapter;
+import android.view.WindowManager;
+import android.view.Gravity;
 
 import com.facebook.react.bridge.Arguments;
 import com.facebook.react.bridge.Callback;
@@ -82,6 +84,23 @@ public class ActionSheetModule extends ReactContextBaseJavaModule {
         callback.invoke();
       }
     });
+    
     dialog.show();
+
+    if (options.hasKey("position")) {
+      ReadableMap position = options.getMap("position");
+      WindowManager.LayoutParams wmlp = dialog.getWindow().getAttributes();
+      wmlp.gravity = Gravity.TOP | Gravity.LEFT;
+      wmlp.x = position.hasKey("x") ? position.getInt("x") : 0;
+      wmlp.y = position.hasKey("y") ? position.getInt("y") : 0;
+      if (position.hasKey("width")) {
+        wmlp.width = position.getInt("width");
+      }
+      if (position.hasKey("height")) {
+        wmlp.height = position.getInt("height");
+      }
+
+      dialog.getWindow().setAttributes(wmlp);
+    }
   }
 }
