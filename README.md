@@ -1,4 +1,4 @@
-# react-native-action-sheet [![npm version](https://badge.fury.io/js/react-native-action-sheet.svg)](https://badge.fury.io/js/react-native-action-sheet) ![MIT](https://img.shields.io/dub/l/vibe-d.svg) ![Platform - Android and iOS](https://img.shields.io/badge/platform-Android%20%7C%20iOS-yellow.svg)
+# react-native-simple-action-sheet [![npm version](https://badge.fury.io/js/react-native-action-sheet.svg)](https://badge.fury.io/js/react-native-action-sheet) ![MIT](https://img.shields.io/dub/l/vibe-d.svg) ![Platform - Android and iOS](https://img.shields.io/badge/platform-Android%20%7C%20iOS-yellow.svg)
 React native action sheet with native android (using the built-in [AlertDialog](https://developer.android.com/reference/android/app/AlertDialog.html))
 
 This module simply return the [ActionSheetIOS](https://facebook.github.io/react-native/docs/actionsheetios.html) if the device on iOS
@@ -12,11 +12,11 @@ iOS | Android
 - [Usage](#usage)
 - [Methods](#methods)
 
-# IMPORTANT ! Package name on npm is now react-native-action-sheet
+# IMPORTANT ! Package name on npm is now react-native-simple-action-sheet
 ## Install
 
-`npm install react-native-action-sheet@latest --save`
-`react-native link react-native-action-sheet`
+`npm install react-native-simple-action-sheet@latest --save`
+`react-native link react-native-simple-action-sheet`
 
 ## if react native < 0.47
 
@@ -31,8 +31,8 @@ The `react-native link` command above should do everything you need, but if for 
 // file: android/settings.gradle
 ...
 
-include ':react-native-action-sheet'
-project(':react-native-action-sheet').projectDir = new File(settingsDir, '../node_modules/react-native-action-sheet/android')
+include ':react-native-simple-action-sheet'
+project(':react-native-simple-action-sheet').projectDir = new File(settingsDir, '../node_modules/react-native-simple-action-sheet/android')
 ```
 ```gradle
 // file: android/app/build.gradle
@@ -40,7 +40,7 @@ project(':react-native-action-sheet').projectDir = new File(settingsDir, '../nod
 
 dependencies {
     ...
-    compile project(':react-native-action-sheet')
+    compile project(':react-native-simple-action-sheet')
 }
 ```
 
@@ -65,7 +65,7 @@ public class MainApplication extends Application implements ReactApplication {
 
 #### (Optional) Style customization
 
-You can change the style of the dialog by editing `nodes_modules/react-native-action-sheet/android/src/main/res/values/style.xml`
+You can change the style of the dialog by editing `nodes_modules/react-native-simple-action-sheet/android/src/main/res/values/style.xml`
 
 ## Usage
 
