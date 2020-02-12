@@ -1,7 +1,7 @@
 {
   "name": "react-native-simple-action-sheet",
   "description": "React native action sheet with native android",
-  "version": "2.3.0",
+  "version": "2.3.1",
   "main": "index.js",
   "license": "MIT",
   "repository": {
